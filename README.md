@@ -1,2 +1,2 @@
 # university
-the code a.k.a. homework i wrote @ ITSZ (https://itszapopan.edu.mx)
+the code a.k.a. homework, practices, lectures i took @ <a href="http://itszapopan.edu.mx">ITSZ</a>
