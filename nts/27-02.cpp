@@ -63,11 +63,11 @@ long fibo_2(int i) {
 	long b = 1;
 	long resultado = 0;
 		
-		if(i = 1 || i == 2) {
+		if(i == 1 || i == 2) {
 			return 1;
 		}
 		
-		for(int j = 2; j <= i); j++ {
+		for(int j = 2; j <= i; j++) {
 			resultado = a + b;
 			a = b;
 			b = resultado;
