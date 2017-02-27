@@ -101,7 +101,7 @@ int main(int argc, const char * argv[])
 */
 
 /* cocientes sucesivos de la serie de fibonacci == se acerca a el numero phi */
-	for(int j = 0; j <= i; j++) {
+/*	for(int j = 0; j <= i; j++) {
 		
 		if(j == 1) {
 			a = 1;
@@ -114,7 +114,7 @@ int main(int argc, const char * argv[])
 		printf("%f", (float) b/a);
 
 		//a = b;
-	}
+	}*/
 
 	return 0;
 }
