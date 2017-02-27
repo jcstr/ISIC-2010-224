@@ -79,36 +79,41 @@ long fibo_2(int i) {
 
 int main(int argc, const char * argv[])
 {
-	int i; // ?
+	int i;
 	long a, b;
 	scanf("%i", &i);
 
-	//long f = fibo(i);
+	/*long f = fibo(i);
 
-	/**/
 
-//	for(int j = 1; j <= i; j++) {
+
+	for(int j = 1; j <= i; j++) {
 		
-//		count = 0;
+		count = 0;
 
-		//long f = fibo(j);
+		long f = fibo(j);
 
 		//printf("%3i: %7li %7li\n", j, f, count);	
-//		pritnf("", j, f);
-//	}
+		pritnf("", j, f);
+	}
 
 	//printf("%li\n", f);
+*/
 
-	/* cocientes sucesivos de la serie de fibonacci == se acerca a el numero phi*/
+/* cocientes sucesivos de la serie de fibonacci == se acerca a el numero phi */
 	for(int j = 0; j <= i; j++) {
+		
 		if(j == 1) {
 			a = 1;
 		}
+		
 		b = fibo(j);
 
-		printf("%f", (float) b / a);
-
 		a = b;
+
+		printf("%f", (float) b/a);
+
+		//a = b;
 	}
 
 	return 0;
