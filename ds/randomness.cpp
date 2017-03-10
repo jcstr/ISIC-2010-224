@@ -18,13 +18,8 @@
 
 float Randomness(int precision)
 {
- 	int aux;
-	int decimal = 11;
-
-	for (int index = 1; index < precision; index++) {
-//		decimal = 11;
-		aux = (rand() % decimal);
-		return aux / float(decimal);
+	for (int index = 0; index < precision; index++) { 		
+		return ((float)(rand() % 100 ) / 101);
 	}
 }
 
