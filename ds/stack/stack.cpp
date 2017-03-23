@@ -1,44 +1,40 @@
 /*
-	cpp
-*/
+ *	stack.cpp
+ */
 
-#include <cstdio>
-#include "stackh.cpp"
+#include "stack.h"
 
-// tenias un parametro de mas escrito "Size" solo ocupas _n
-stack::stack(int _n): n(_n), s(0) {
-	array = new int[n]; //constructor
+stack::stack(int _n): capacity(_n), size(0) {
+	array = new int[capacity]; /* contruct */
 }
 
 stack::~stack() {
-	delete [] array; // liberar la memoria despues de usarse
+	delete [] array; /* free memory after use */
 }
 
-// Falto indicar  a que clase pertenecen
-// className::methodName
+/* className::methodName */
 void stack::push(int data) {
 	if (!full()) {
-		array[s++] = data;
+		array[size++] = data;
 	} else {
-		// Punto y coma xD
-		printf("Pila llena\n");
+		printf("Full Stack\n\n");
 	}
 }
 
 int stack::pop() {
 	if (!empty()) {
-		return array[--s];
+		return array[--size];
 	}
 
-	printf("Pila vacia\n");
+	printf("Empty Stack\n\n");
 	return 0;
 }
 
 int stack::top() {
 	if (!empty()) {
-		return array[s-1]; // retorna el valor disponible en top
+		return array[size - 1]; /* return the 'top' value */
 	}
-
-	printf("Pila vacia\n");
+	printf("Empty Stack\n\n");
+	
 	return 0;
 }
