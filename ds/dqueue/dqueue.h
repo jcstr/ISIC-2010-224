@@ -7,7 +7,7 @@
 
 #include <cstdio>
 
-class stack {
+class queue {
 //	int *array; /* stack implementation */
 
 class node {
@@ -24,8 +24,8 @@ class node {
 	int size;
 
 public:
-	stack(int); // constructor
-	~stack(); // destructor
+	queue(int); // constructor
+	~queue(); // destructor
 
 	void push(int);
 	int pop();
