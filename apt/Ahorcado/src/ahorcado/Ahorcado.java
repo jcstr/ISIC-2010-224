@@ -1,9 +1,10 @@
+package ahorcado;
 
 /**
  *
  * @author jesus
  */
-public class Ahorcado {
+public class Ahorcado extends View {
     /*
             Regarding to MVC design
             Add the following stuff:

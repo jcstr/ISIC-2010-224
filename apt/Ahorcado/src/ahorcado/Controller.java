@@ -1,3 +1,5 @@
+package ahorcado;
+
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.ActionEvent;
@@ -6,19 +8,11 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 import java.awt.*;
 
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JComboBox;
-import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
-
 import java.util.Random;
 
 public class Controller implements ActionListener, KeyListener {
     
-	addKeyListener(this);
-    
-	JButton[] teclado = new JButton[26]; /* se omite 'ñ' */
+    JButton[] teclado = new JButton[26]; /* se omite 'ñ' */
     String[] teclas = {"a","b","c","d",
                        "e","f","g","h",
                        "i","j","k","l",
@@ -32,31 +26,20 @@ public class Controller implements ActionListener, KeyListener {
                                              "guitarra","bateria","violin","microfono", // Instrumentos
                                              "java","linux","gnu","gcc"} // Software
                                          };
-	private String palabraDelJugador;
 
     Controller(JComboBox categorias, JLabel palabra, JLabel jugador, JLabel vidas) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-	public ControladorPrincipal(JComboBox listaDeCategorias, JLabel palabra, JLabel persona, JLabel vidas)
-	{
-		this.listaDeCategorias = listaDeCategorias;
-		this.palabra = palabra;
-		this.persona = persona;
-		this.vidas = vidas;
-		this.pressStartGame = false;
-		this.intents = 5;
-	}
     
     
     public void PessStart(){
         Random azar = new Random();
-	
-		int seleccionarAlAzar = ((View)listaDeCategorias.getSelectedItem()).getKey();
-		int seleccionado = (int)(listaDeCategorias[seleccionarAlAzar].length * random.nextDouble());
-
-		this.pressStartGame = true;
-		 
+    }
+    
+    @Override
+    public void actionPerformed(ActionEvent actionevent)
+    {
+        
     }
     
     @Override
@@ -178,27 +161,5 @@ public class Controller implements ActionListener, KeyListener {
     public void keyReleased(KeyEvent event) 
     {
         
-    }
-
-	@Override
-    public void actionPerformed(ActionEvent actionevent)
-    {
-		try {
-			if (event.getSource() instanceof JButton) {
-				JButton boton = (JButton)event.getSource();
-				String valorDeBoton = boton.getText();
-				if (valorDeBoton.equalsIgnoreCase("S T A R T") && !this.is_start)) {
-					PressStart();
-				} else if (valorDeBoton.equalsIgnoreCase("Resolver") && this.is_start) {
-					solve();						
-				} else if (isAlpha(valorDeBoton) && this.is_start) {
-					evalue(boton);
-				}				
-			}
-		}
-		catch (Exception e) {
-        
-		}
-    }
-     
+    } 
 }
