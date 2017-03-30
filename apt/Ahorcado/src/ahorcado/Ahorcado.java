@@ -1,19 +1,21 @@
 package ahorcado;
 
-/**
- *
- * @author jesus
- */
-public class Ahorcado extends View {
-    /*
-            Regarding to MVC design
-            Add the following stuff:
-            - Ahorcado (this class) stuff
-                - what kind of stuff?:
-                    - 
-     */
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
+public class Ahorcado {
+
     public static void main(String[] args) { 
-      View juego = new View();
+        
+        try {
+             UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
+	} catch(ClassNotFoundException | IllegalAccessException | InstantiationException | UnsupportedLookAndFeelException ex) {  
+              // LOL NULL
+        } finally {
+            ControllerUI juego = new ControllerUI();
+            juego.setVisible(true);
+        }
+    
     }   
 
 }

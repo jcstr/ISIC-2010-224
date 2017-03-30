@@ -1,14 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ahorcado;
 
-/**
- *
- * @author jesus
- */
+import java.util.Random;
+import javax.swing.JButton;
+
 public class ControllerUI extends javax.swing.JFrame {
 
     /**
@@ -27,57 +21,225 @@ public class ControllerUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextField1 = new javax.swing.JTextField();
+        jMenu1 = new javax.swing.JMenu();
+        jLabelCategorias = new javax.swing.JLabel();
+        jComboBoxCategorias = new javax.swing.JComboBox<>();
+        jPanelImagen = new javax.swing.JPanel();
+        jButtonSTART = new javax.swing.JButton();
+        jButtonMeRindo = new javax.swing.JButton();
+        jPanelPLAYZONE = new javax.swing.JPanel();
+        jLabelPalabraJuego = new javax.swing.JLabel();
+
+        jTextField1.setText("jTextField1");
+
+        jMenu1.setText("jMenu1");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabelCategorias.setFont(new java.awt.Font("DejaVu Sans", 0, 24)); // NOI18N
+        jLabelCategorias.setText("Categorías:");
+
+        jComboBoxCategorias.setFont(new java.awt.Font("FZChaoCuHei-M10", 0, 18)); // NOI18N
+        jComboBoxCategorias.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "frutas", "instrumentos", "software" }));
+
+        javax.swing.GroupLayout jPanelImagenLayout = new javax.swing.GroupLayout(jPanelImagen);
+        jPanelImagen.setLayout(jPanelImagenLayout);
+        jPanelImagenLayout.setHorizontalGroup(
+            jPanelImagenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 416, Short.MAX_VALUE)
+        );
+        jPanelImagenLayout.setVerticalGroup(
+            jPanelImagenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 438, Short.MAX_VALUE)
+        );
+
+        jButtonSTART.setFont(new java.awt.Font("FZChaoCuHei-M10", 0, 18)); // NOI18N
+        jButtonSTART.setText("S T A R T ");
+        jButtonSTART.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSTARTActionPerformed(evt);
+            }
+        });
+
+        jButtonMeRindo.setFont(new java.awt.Font("FZChaoCuHei-M10", 0, 18)); // NOI18N
+        jButtonMeRindo.setText("ME RINDO");
+        jButtonMeRindo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonMeRindoActionPerformed(evt);
+            }
+        });
+
+        jPanelPLAYZONE.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "PLAY AREA", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("DejaVu Sans", 1, 18))); // NOI18N
+
+        jLabelPalabraJuego.setFont(new java.awt.Font("Nunito", 0, 36)); // NOI18N
+
+        javax.swing.GroupLayout jPanelPLAYZONELayout = new javax.swing.GroupLayout(jPanelPLAYZONE);
+        jPanelPLAYZONE.setLayout(jPanelPLAYZONELayout);
+        jPanelPLAYZONELayout.setHorizontalGroup(
+            jPanelPLAYZONELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabelPalabraJuego, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanelPLAYZONELayout.setVerticalGroup(
+            jPanelPLAYZONELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelPLAYZONELayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabelPalabraJuego, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelPLAYZONE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jButtonSTART, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelCategorias, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jComboBoxCategorias, 0, 266, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButtonMeRindo, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanelImagen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jComboBoxCategorias)
+                            .addComponent(jLabelCategorias, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButtonSTART, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonMeRindo, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanelPLAYZONE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanelImagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
+    private void jButtonSTARTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSTARTActionPerformed
+        
+        
+     boolean juegoComenzado = false;
+        try
+	{
+            if(evt.getSource() instanceof JButton) {
+                JButton JButtonSTART = (JButton)evt.getSource();
+                String contenidoDelBoton = JButtonSTART.getText();
+                if (contenidoDelBoton.equalsIgnoreCase("S T A R T") && !juegoComenzado) {
+                   PressStart();
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ControllerUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ControllerUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ControllerUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ControllerUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
+        catch(Exception e)
+	{
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ControllerUI().setVisible(true);
+	}
+    }//GEN-LAST:event_jButtonSTARTActionPerformed
+
+    private void jButtonMeRindoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMeRindoActionPerformed
+
+        boolean juegoIniciado = true;
+        if(evt.getSource() instanceof JButton) {
+                JButton JButtonMeRindo = (JButton)evt.getSource();
+                String contenidoDelBoton = JButtonMeRindo.getText();
+                if (contenidoDelBoton.equalsIgnoreCase("ME RINDO") && juegoIniciado) {
+                    MeRindo();
+                }
             }
-        });
-    }
+			
+    }//GEN-LAST:event_jButtonMeRindoActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonMeRindo;
+    private javax.swing.JButton jButtonSTART;
+    private javax.swing.JComboBox<String> jComboBoxCategorias;
+    private javax.swing.JLabel jLabelCategorias;
+    private javax.swing.JLabel jLabelPalabraJuego;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JPanel jPanelImagen;
+    private javax.swing.JPanel jPanelPLAYZONE;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
+    
+    private String palabraParaAdivinar;
+    final String listaDeCategorias[] = {"Frutas", "Instrumentos", "Computacion"};
+    
+    private final String[] [] frutas = {{"manzana","mango","pera","sandia"}};
+    private final String[] [] intrumentos = {{"guitarra","bateria","violin","microfono"}};
+    private final String[] [] software = {{"java","linux","gnu","gcc"}};
+    
+    String palabraDelJugador;
+    
+    int intentos;
+    
+    private int keyRandom;
+    
+    public int getKey()
+    {
+        return keyRandom;
+    }
+    
+    private void Reiniciar() {
+        boolean is_start = false;
+	int intentos = 5;
+	person.setIcon(null);
+	lifes.setIcon(null);
+        word.setText("");
+    }
+    
+    private void MeRindo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        JOptionPane.showMessageDialog(null, "Palabra:\n" + palabraParaAdivinar, "LOOSER!", JOptionPane.INFORMATION_MESSAGE);
+	Reiniciar();
+    }
+
+    private void PressStart() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+      //   final String listaDeCategorias[] = {"Frutas", "Instrumentos", "Computacion"};
+         
+    //     final String[] [] frutas = {{"manzana","mango","pera","sandia"}};
+      //   final String[] [] intrumentos = {{"guitarra","bateria","violin","microfono"}};
+        // final String[] [] software = {{"java","linux","gnu","gcc"}};
+    
+    //     String palabraDelJugador;
+         //int intentos;
+         
+	 //String _word;
+         
+         for (int i = 0; i < listaDeCategorias.length; i++) {
+             jComboBoxCategorias.add(new i, listaDeCategorias[i]);
+         }
+            add(jComboBoxCategorias);
+		
+        Random random = new Random();
+
+        int x = (jComboBoxCategorias.getSelectedItem()).getKey();
+	int y = (int)(listaDeCategorias[x].length * random.nextDouble());
+           
+        palabraParaAdivinar = String.format("%"+ Integer.toString(listaDeCategorias[x][y].length()) + "s", "").replace(' ', '*');
+        word.setText(palabraParaAdivinar);
+        _word = listaDeCategorias[x][y];
+                
+        person.setIcon(new ImageIcon(getClass().getResource("/sources/0.jpg")));
+	lifes.setIcon(new ImageIcon(getClass().getResource("/sources/life5.jpg")));
+        
+        System.out.println(_word);
+    }
 }
