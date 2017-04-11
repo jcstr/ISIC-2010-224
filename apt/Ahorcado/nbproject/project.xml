@@ -3,13 +3,12 @@
     <type>org.netbeans.modules.java.j2seproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
-            <name>Ahorcado</name>
+            <name>Tarea-Ahorcado</name>
             <source-roots>
                 <root id="src.dir"/>
+                <root id="src2.dir"/>
             </source-roots>
-            <test-roots>
-                <root id="test.src.dir"/>
-            </test-roots>
+            <test-roots/>
         </data>
     </configuration>
 </project>
