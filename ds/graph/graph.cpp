@@ -2,11 +2,31 @@
  *	graph.cpp
  */
 
-#include "graph.h"
+#include "graph.hpp"
+
+/* global */
+bool graph::x = false;
+
+graph::graph(int n): _n(n) 
+{
+	m_max = _n * (n - 1) / 2;
+	v = new bool[m_max];
+
+	for (int i = 0; i < m_max; i++) {
+		v[i] = false;
+	}
+}
+
+graph::~graph()
+{
+	/* TODO */
+}
 
 int graph::f(int u, int v)
 {
-	if (u == v) return 0;
+	if (u == v) {
+		return 0;
+	}
 
 	if(u > v) {
 		int aux = v;
@@ -17,31 +37,29 @@ int graph::f(int u, int v)
 	return (u - 1) * (u - 2) / 2 + v + 1;
  }
 
-void print(graph &)
+void print(graph &g)
 {
-	/* TODO */
-}
-graph::graph(int n): _n(n) {
-	
-	// _n = n;
-	m_max = _n * (n - 1) / 2;
-	v = new bool[m_max];
+	for (int i = 2; i < g._n; i++) {
+		g.v[i] = false;
 
-	for (int i = 0; i < m_max; i++) {
-		v[i] == 0;
+		for (int j = 1; j < i; j++) {
+			printf("[%i, %i] %i\n", i, j, g.v[g.f(i,j)]);
+		}
 	}
-}
-
-~graph()
-{
-	/* TODO */
 }
 
 bool &graph::edge(int i, int j)
 {
-	/* TODO - verify */
+	if (i < 1 || i > _n || j < 1 || j > _n || j == i) {
+		
+		printf("[Graph]: bad index\n");
+
+		/*bool x = false;*/
+		return x;
+	}
 	return v[f(i, j)];
 }
 
-int graph::n() const { return _n; }
-int graph::m() const { return _m; }
+/* verify const */
+int graph::n() /*const*/ { return _n; }
+int graph::m() /*const*/ { return _m; }

@@ -2,8 +2,12 @@
  *	graph.hpp
  */
 
+#ifndef __GRAPH_HPP
+#define __GRAPH_HPP
+
 class graph {
 
+	static bool x; // variable de contencion
 	bool *v;
 
 	int _n;
@@ -20,9 +24,10 @@ class graph {
 
 		bool &edge(int, int);
 
-		const int n();
-		const int m();
+		int /*const*/ n();
+		int /*const*/ m();
 };
 
 void print(graph &);
-/* edge(i,j) */
+/*edge(i,j)*/
+#endif
