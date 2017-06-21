@@ -43,7 +43,7 @@ void print(graph &g)
 		g.v[i] = false;
 
 		for (int j = 1; j < i; j++) {
-			printf("[%i, %i] %i\n", i, j, g.v[g.f(i,j)]);
+			printf("[%i, %i] %i\n", i, j, g.v[gf.(i,j)]);
 		}
 	}
 }
