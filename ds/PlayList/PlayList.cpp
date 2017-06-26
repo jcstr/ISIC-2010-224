@@ -311,50 +311,47 @@ int main(int argc, char const *argv[])
 	spoty.show();
 
 	cout << "opcion: ";
+do {
 	cin >> opt;
 
 	switch(opt) {
-		case 'S':
+		case 's':
 			spoty.randomize();
 			spoty.show();
 			break;
-		case 'B':
+		case 'b':
 			spoty.after();
 			spoty.show();
 			break;
 
-		case 'Z':
+		case 'z':
 			spoty.before();
 			spoty.show();
 			break;
 
-		case 'L':
+		case 'l':
 			scanf("%s %s", &author, &song);
 			spoty.add(author, song);
 			spoty.show();
 			break;
 
-		case 'E':
+		case 'e':
 			spoty.erase();
 			spoty.show();
 			break;
 
-		case 'X':
-			return 0;
-			break;
-	}
-
-	switch(op) {
-		case 1:
+		case '1':
 			spoty.orderBySong();
 			spoty.show();
 			break;
 
-		case 2:
+		case '2':
 			spoty.orderByAuthor();
 			spoty.show();
 			break;
 	}
+
+} while (opt != 'x');
 
 /*
 	for (int i = 0; i < 10; ++i) 
