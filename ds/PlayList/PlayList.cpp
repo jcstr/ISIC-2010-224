@@ -165,7 +165,7 @@ class PlayList
 		void before()
 		{
 			actual = actual->preview();
-			if(actual->preview() == NULL) actual = final;
+			if(actual == NULL) actual = final;
 		}
 
 		/**
@@ -212,7 +212,7 @@ class PlayList
 			Node *aux = initial;
 			while(aux)
 			{
-				// Verificar si el nodo aux es igual al actual para poner el *
+				/* Verificar si el nodo aux es igual al actual para poner el * */
 				cout << (actual->author() == aux->author() ? "* " : "") << aux->author() << setw(20) << aux->song() << endl;
 				aux = aux->next();
 			}
@@ -285,8 +285,6 @@ class PlayList
 
 int main(int argc, char const *argv[])
 {
-//	srand(time(NULL));
-
 	int op = 0;
 	char opt = 'S';
 	string author;
@@ -311,59 +309,45 @@ int main(int argc, char const *argv[])
 	spoty.show();
 
 	cout << "opcion: ";
-do {
-	cin >> opt;
+	
+	do 
+	{
+		cin >> opt;
 
-	switch(opt) {
-		case 's':
-			spoty.randomize();
-			spoty.show();
-			break;
-		case 'b':
-			spoty.after();
-			spoty.show();
-			break;
+		switch(opt) 
+		{
+			case 's':
+				spoty.randomize();
+				break;
+			case 'b':
+				spoty.after();
+				break;
 
-		case 'z':
-			spoty.before();
-			spoty.show();
-			break;
+			case 'z':
+				spoty.before();
+				break;
 
-		case 'l':
-			scanf("%s %s", &author, &song);
-			spoty.add(author, song);
-			spoty.show();
-			break;
+			case 'l':
+				cin >> author;
+				cin >> song;
+				spoty.add(author, song);
+				break;
 
-		case 'e':
-			spoty.erase();
-			spoty.show();
-			break;
+			case 'e':
+				spoty.erase();
+				break;
 
-		case '1':
-			spoty.orderBySong();
-			spoty.show();
-			break;
+			case '1':
+				spoty.orderBySong();
+				break;
 
-		case '2':
-			spoty.orderByAuthor();
-			spoty.show();
-			break;
-	}
+			case '2':
+				spoty.orderByAuthor();
+				break;
+		}
 
-} while (opt != 'x');
-
-/*
-	for (int i = 0; i < 10; ++i) 
-	{  
-		spoty.add(author, song);
-		author = "";
-		author += char(65 + i);
-		song = "";
-		song += char(90 - i);
-	}
-*/
-//	spoty.show();
+		spoty.show();
+	} while (opt != 'x');
 
 	return 0;
 }
