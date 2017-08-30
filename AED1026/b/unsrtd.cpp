@@ -25,15 +25,13 @@ void deleteD(int x)
 	
 	while ((i <= n) && (x != v[i])) {
 		i++;
-	}
-
-	if (i > n) {
+	} if (i > n) {
 		cout << endl << "EROR! 404..." << endl;
 	} else {
 		for (k = i; k <= n - 1; k++) {
 			v[k] = v[k + 1];
 		} 
-		
+
 		k--;
 	}
 }
@@ -44,9 +42,7 @@ void modifyD(int x, int y)
 	
 	while ((i <= n) && (x != v[i])) {
 		i++;
-	}
-	
-	if (i > n) {
+	} if (i > n) {
 		cout << endl <<"ERROR! 404..." << endl;
 	} else {
 		v[i] = y;
@@ -79,28 +75,24 @@ int main()
     		case 1: 
 				cout << "Value to add: ";
     			cin >> x;
-    			insertarDesordenado(x);
-				
+    			insertD(x);
 				break;
     		case 2:
     			cout << "Value to delete: ";
 				cin >> y;
-    			eliminarDesordenado(y);
-    			
+    			deleteD(y);
 				break;
     		case 3:
 				cout << "Value to modify: ";
 				cin >> x;
 				cout << "New value: ";
 				cin >> y;
-    			modificarDesordenado(x, y);
-    			
+    			modifyD(x, y);
 				break;
     		case 4:
     			cout << endl << "Showing..." << endl;
-    			mostrarArreglo();
+    			show();
 				cout << endl;
-    			
 				break;
     	}
 	} while (opc != 5 && opc < 5 && opc != 0);
