@@ -4,9 +4,9 @@ using namespace std;
 
 int factorial(int n)
 {
-	int fact = 1;
+	unsigned long long fact = 1;
 
-	for (int i = 1; i < n; i++) {
+	for (int i = 1; i <= n; i++) {
 		fact *= i;
 	}
 
