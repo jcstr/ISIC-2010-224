@@ -29,7 +29,7 @@ int main(int argc, const char * argv[])
 
 	hanoi(n, 'A', 'C', 'B');
 
-	cout << "movements: " << count << endl;
+	cout << "movimientos: " << count;
 	
 	return 0;
 }

@@ -15,16 +15,16 @@ int factorial(int n)
 
 int main()
 {	
-	int num, result;
+	int num, resultado;
 
 	cout << endl << "* Factorial *" << endl;
 	
 	cout << ": ";
 	cin >> num;
 
-	result = factorial(num);
+	resultado = factorial(num);
 
-	cout << endl << "* Factorial of " << num << ": " << result << endl;
+	cout << endl << "* Factorial de " << num << " es: " << resultado << endl;
 
 	return 0;
 }

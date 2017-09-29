@@ -2,22 +2,6 @@
 
 using namespace std;
 
-/*
-int fib(int n)
-{
-	int a = 0;
-	int b = 1;
-	
-	while (n-- > 1) {
-		int t = a;
-		a = b;
-		b += t;
-	}
-	
-	return b;
-}
-*/
-
 int fibonacci(int n) 
 {
 	if (n == 0 || n == 1) {
@@ -31,7 +15,7 @@ int main()
 {
 	int num;
 
-	cout << endl << "* Fibonacci *" << endl;
+	cout << "\n* Fibonacci *\n" << endl;
 	
 	do {
 		cout << ": ";
@@ -42,7 +26,7 @@ int main()
 	
 	for (int i = 0; i < num; i++) {
 		if (fibonacci(i) != 0) {
-		cout << fibonacci(i) << " ";
+			cout << fibonacci(i) << " ";
 		}
 	}
 	cout << endl;

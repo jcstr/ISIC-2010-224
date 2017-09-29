@@ -18,7 +18,7 @@ int main()
 {
     int m, n, num;
 
-    cout << endl << "* Ackerman *" << endl;
+    cout << endl << "* Ackerman" << endl;
 
     cout << "<m>: ";
     cin >> m;
@@ -27,7 +27,7 @@ int main()
     
     num = ackerman(m, n);
     
-    cout << endl << "The number: " << num << endl << endl;
+    cout << endl << "El numero es: " << num << endl << endl;
 
     return 0;
 }

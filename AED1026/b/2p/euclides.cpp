@@ -22,7 +22,7 @@ int main()
 //	a = 364332;
 //	b = 30252;
 	
-	cout << endl << "* Euclides *" << endl;
+	cout << endl << "* Euclides " << endl;
 	cout << "a: ";
 	cin >> a;
 	cout << "b: ";
