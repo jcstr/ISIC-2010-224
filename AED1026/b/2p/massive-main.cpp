@@ -1,6 +1,6 @@
 #include <iostream>
-#include<time.h>
-#include<stdlib.h>
+#include <time.h>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -10,17 +10,15 @@ void bubble()
 	srand(time(NULL));
 	int data[100], i, n, step, temp;
 
-	cout << endl << "* Bubble Sort *" << endl;
+	cout << endl << "[!] Bubble Sort" << endl;
     n = 3 + (rand() % 10);
-	cout << "Numero de Elementos: "<< n << endl;
-
+	cout << " Numero de Elementos: "<< n << endl;
 
 	for (i = 0; i < n; ++i) {
 		data[i] = 1 + (rand() % 51);
         cout << data[i] << " ";
     }
 
-	/* Bubble Sort */
     for (step = 0; step < n - 1; ++step) {
     	for (i = 0; i < n - step - 1; ++i) {
         	if (data[i] > data[i + 1]) {
@@ -31,7 +29,7 @@ void bubble()
     	}
 	}
 
-    cout << endl << "Orden Ascendente: ";
+    cout << endl << "[+] Orden Ascendente: ";
     for (i = 0; i < n; ++i) {
 		 cout << data[i] << " ";
 	}
@@ -44,7 +42,7 @@ void binaria ()
 	srand(time(NULL));
 
     int n, array[1000], c, d, t;
-	cout << endl << "* Insercion Binaria *" << endl;
+	cout << endl << "[!] Insercion Binaria" << endl;
   	n = 3 + (rand() % 10);
 	cout << " Numero de Elementos:" << n << endl;
 
@@ -63,7 +61,7 @@ void binaria ()
     	}
 	}
 	
-	cout << endl << "Lista en Orden Ascendente: ";
+	cout << endl << "[+] Lista en orden ascendente: ";
 	for (c = 0; c <= n - 1; c++) {
     	cout << array[c] << " ";
   	}
@@ -167,11 +165,11 @@ void shaker ()
 	int aux, n;
 	int der, izq, ultimo;
 
-	cout << "* SHAKER SORT *" << endl;
+	cout << endl <<"[!] Shaker sort" << endl;
 
 	cout << endl;
     n = 3 + (rand() % 10);
-	cout << "Los numeros son : "<< n << endl;
+	cout << " Los numeros son : "<< n << endl;
 
 	cout << endl;
 	
@@ -209,7 +207,7 @@ void shaker ()
 
 	} while (der >= izq);
 
-	cout<< "Numeros Ordenados:  "<< endl;
+	cout<< "[+] Numeros Ordenados:  "<< endl;
 
 	for (int i = 0; i < n; i++) {
 		cout << "[" << shaker_sort [i] << " ] ";
@@ -248,7 +246,7 @@ void leeCadena(int cant, int n[])
 	int i;
 	for (i = 0; i < cant; i++) {
             n[i] = 1 + (rand() % 51);
-		cout << "Numero: " << n[i] << endl;
+		cout << "[+] Numero: " << n[i] << endl;
 	}
 }
 
@@ -280,21 +278,23 @@ int main()
 {
 	int op;
 	do {
-    	cout << "Opcion: 1 Bubble Sort" << endl; 
-	 			 Opcion: 2 Insercion Binaria\n\
-				 Opcion: 3 Seleccion Directa\n\
-				 Opcion: 4 Ordenacion Merge\n\
-			 	 Opcion: 5 Quicksort\n\
-			 	 Opcion: 6 Shaker Sort\n\
-			 	 Opcion: 7 Ordenacion Shell\n\
-			 	 Opcion: 8 Insercion Directa\n\
-			 	 Opcion: 9 Salir\n\
-			 	 Selecciona una opcion: \n";
+		cout << endl << "*** Algoritmos de ordenacion y busqueda ***" << endl << endl;
+    	
+		cout << " [1] Bubble Sort" << endl; 
+	 	cout <<	" [2] Insercion Binaria" << endl;
+		cout <<	" [3] Seleccion Directa" << endl;
+		cout <<	" [4] Ordenacion Merge" << endl;
+		cout <<	" [5] Quicksort" << endl;
+		cout <<	" [6] Shaker Sort" << endl;
+		cout <<	" [7] Ordenacion Shell" << endl;
+		cout <<	" [8] Insercion Directa" << endl;
+		cout <<	" [9] Salir" << endl;
+		
+		cout << endl << "Seleccion: ";
 		cin >> op;
 		if (op == 0 || op > 8) {
 			break;
-		}
-
+		} 
 		switch (op) {
 			case 1: {
     			bubble();
@@ -304,32 +304,32 @@ int main()
     		} break;
 			case 3: {
 				srand(time(NULL));
-    			cout << "* Seleccion Directa *" << endl;
+    			cout << "[!] Seleccion directa" << endl;
 				
 				n = 4 + (rand() % 10);
-    			cout << "La Cantidad De Datos es: " << n << endl;
+    			cout << "[+] La cantidad De Datos es: " << n << endl;
 				
 				for (int i = 0; i < n; i++) {
         			num[i] = 1 + (rand() % 51);
-        			cout << "Los Valores son " <<num[i]<< endl;
+        			cout << "[+] Los Valores son: " << num[i] << endl;
     			}
-    			cout << "Arreglo Desordenado: " << endl;
+    			cout << "[+] Arreglo Desordenado: " << endl;
    		 		
 				Mostrar();
     			Ordenar();
     			
-				cout << "\nArreglo Odenado " << endl;
+				cout << endl << "[+] Arreglo Odenado: " << endl;
     			Mostrar();
     			
 				cout << endl;
     		} break;
 			case 4: {
     			srand(time(NULL));
-    			cout << "* Ordenacion Merge*"<<endl;
+    			cout << endl <<"[!] Ordenacion Merge " << endl;
     			int *v, n;
     			
 				n = 4 + (rand() % 10);
- 				cout << "El tama\xA4o del arreglo es: " << n << endl;
+ 				cout << "[+] El tama\xA4o del arreglo es: " << n << endl;
  				v = new int[n];
  				
 				for (int i = 0; i < n; i++) {
@@ -339,15 +339,15 @@ int main()
  				mergesort(v, 0, n - 1);
 
  				for (int i = 0; i < n; i++)
-  					cout << "Ordenacion: " << v[i] << endl;
+  					cout << "[+] Ordenacion: " << v[i] << endl;
   			} break;
 			case 5: {
     			srand(time(NULL));
-    			cout << "* Quicksort *"<< endl;
+    			cout << endl << "[!] Quicksort "<< endl;
     			int nn;
     			
 				nn = 4 + (rand() % 10);
-    			cout << "Tama\xA4o del arreglo es: " << nn << endl;
+    			cout << "[+] Tama\xA4o del arreglo es: " << nn << endl;
     			int vv[nn];
     			
 				for (int ii = 0; ii < nn; ii++) {
@@ -357,7 +357,7 @@ int main()
     			cout << endl;
     			ordena(vv,0,nn-1);
     			
-				cout << "Arreglo Ordenando" << endl;
+				cout << "[+] Arreglo Ordenando:" << endl;
 				for (int ii = 0; ii < nn; ii++) {
         			cout << vv[ii] << " ";
 
@@ -371,7 +371,7 @@ int main()
          		srand(time(NULL));
       			int N;
       			N = 4 + (rand() % 10);
-    			cout << "Elementos del conjunto: " << N << endl;
+    			cout << "[+] Elementos del conjunto: " << N << endl;
     			int V[N];
 
     			for (int i = 0; i < N; i++) {
@@ -380,7 +380,7 @@ int main()
     			}		
 
     			shell(V, N);
-    			cout << "Arreglo ordenado: " << endl;
+    			cout << "[+] Arreglo ordenado:" << endl;
 				for (int i = 0; i < N; i++) { 
         			cout << V[i] << endl;
     			}	
@@ -390,16 +390,16 @@ int main()
         		int A[largo], n;
 			do {
         		n = 4 + (rand() % 10);
-				cout << "Cantidad de numeros a ingresar: " << n << endl;
+				cout << "[+] Cantidad de numeros a ingresar: " << n << endl;
 
-				if (n <= 0 || n > largo)
-					cout << "Debe ingresar un valor " << largo << endl;
-
+				if (n <= 0 || n > largo) {
+					cout << "[-] Debe ingresar un valor " << largo << endl;
+				}
 			} while (n <= 0 || n > largo);
-
-				leeCadena(n,A);
-				insercionDirecta(A,n);
-				muestraCadena(n,A);
+			
+			leeCadena(n,A);
+			insercionDirecta(A,n);
+			muestraCadena(n,A);
     		}
 		}
 	} while (true);
