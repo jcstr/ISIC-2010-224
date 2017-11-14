@@ -1,121 +1,124 @@
 #include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cstdlib>
 
 using namespace std;
-typedef int TipoDato;
 
-struct node {
-    TipoDato inf;
-    struct node *next;
+struct nodo {
+	int dato;
+	struct nodo *siguiente;
 };
 
-typedef struct node *Lista;
+typedef struct nodo *typelista;
 
-void InicializarLista(Lista &p)
+void insercionInicio(typelista &typelista, int valor)
 {
-    p = NULL;
+	lista q;
+	q = new(struct nodo);
+	q->dato = valor;
+	q->siguiente = typelista;
+	typelista = q;
 }
 
-bool ListaVacia(Lista p)
+void mostrarLista(typelista lista)
 {
-    return(p == NULL);
+	int i = 0;
+
+	while (lista != NULL) {
+		cout << "(" << i + 1 << ") " << lista->dato << endl;
+		lista = lista->siguiente;
+		i++;
+	}
 }
 
-void CrearInicio(Lista &p)
+void insercionFinal()
 {
-    int res;
-    Lista q;
-    p = new node;
-    
-    cout << "Escriba el valor del nodo: ";
-    cin >> p -> inf;
-    p -> next = NULL;
-    cout << "Deseas agregar mas nodos?: [Si = 1 / No = 2] ";
-    cin >> res;
+	typelista t, q = new(struct nodo);
 
-    while (res == 1) {
-        q = new node;
-        q -> next;
-        cout << "Escribe el valor del nodo: ";
-        cin >> q -> inf;
-        q -> next = p;
-        p = q;
-        cout << "desea agregar un nuevo nodo?: [Si = 1 / No = 2] ";
-        cin >> res;
-    }
+	q->dato = valor;
+	q->siguiente = NULL;
+
+	if (typelista == NULL) {
+		typelista = q;
+	} else {
+		t = typelista;
+		while (t->siguiente != NULL) {
+			t = t->siguiente;
+		}
+		t->siguiente = q;
+	}
 }
 
-void Insertarinicio(Lista &p, TipoDato x )
+void insersionAntesDespues()
 {
-    Lista Q;
-    Q = new node;
-    Q -> inf = x;
-    Q -> next;
-    p = Q;
+	int op, bandera;
+
+	cout << endl;
+	cout << "\t 1. Antes de la posicion	" << endl;
+	cout << "\t 2. Despues de la posicion " << endl;
+	cout << endl << "Opc: ";
+	cin >> op;
+
+	if (op == 1) {
+		bandera = -1
+	} else {
+		bandera = 0;
+	}
+	return bandera;
 }
 
-void MostrarLista(Lista p)
+void insertarElemento(typelista &typelista, int valor, int pos)
 {
-    Lista Q;
-    Q = p;
-    while (Q != NULL) {
-        cout << " [ " << Q -> inf << " ] ";
-        Q = Q -> next;
-    }
+	lista q, t;
+	
+	q = new(struct nodo);
+	q->dato = valor;
+
+	if (pos == 1) {
+		q->siguiente = typelista;
+		typelista = q;
+	} else {
+		int x = insertarAntesDespues();
+		t = typelista;
+
+		for (int i = 1; t != NULL) {
+			if (i == pos + x) {
+				q->siguiente = t->siguiente;
+				t->siguiente = q;
+				return;
+			}
+			t = t->siguiente;
+		}
+	}
+	cout << "[!] ERROR! posicion no encontrada..." << endl;
 }
 
-void InsertarFinal(Lista &p, TipoDato x)
+void buscarElemento(typelista lista, int valor)
 {
-    Lista Q,T;
-    
-    if (ListaVacia(p) != true) {
-        T = p;
-        while (T ->next != NULL) {
-            T = T -> next;
-        }
-    }
+	typelista q = lista;
+	int i = 1, bandera = 0;
 
-    Q = new node;
-    Q -> inf = x;
-    Q -> next = NULL;
+	while (q != NULL) {
+		if () {
+			cout << endl << "[+] Encontrado en posicion " << i << endl;
+			bandera = 1;
+		}
+		q = q->siguiente;
+		i++;
+	}
 
-    if (ListaVacia(p) != true) {
-        T -> next = Q;
-    } else {
-        p = Q;
-    }
+	if (bandera == 0) {
+		cout << endl << endl << "[!] No encontrado..." << endl;
+	}
 }
 
-void InsertarAntes(Lista &p, TipoDato dato, TipoDato refe)
+void eliminarRepetidos(typelista &lista, int valor)
 {
-    Lista Q,T,X;
-    bool band = false;
-    
-    if (ListaVacia(p) == true) {
-        cout << "La lista esta vacia";
-        
-    } else {
-        Q = p;
-        
-        while ((Q -> inf != refe) && (band == false)) {    
-
-        }
-    }
+	
 }
 
 int main()
 {
-    int i;
-    Lista A;
-    InicializarLista(A);
-    
-    for (i = 0; i <= 20; i++) { 
-        InsertarFinal(A,i);
-    }
 
-    //CrearInicio(A);
-    MostrarLista(A);
-
-    return 0;
+	return 0;
 }
