@@ -1,0 +1,11 @@
+table, td, th { 
+	border: 1px solid; 
+}
+
+td, th { 
+	width: 100px; height: 35px; 
+}
+
+table { 
+	border-collapse: collapse; margin: auto; 
+}

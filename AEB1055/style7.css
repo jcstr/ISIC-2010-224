@@ -1,0 +1,19 @@
+a { 
+	margin: 1em 0; display: block;
+}
+ 
+.alternativo {
+	color: #CC0000;
+}
+
+.simple	{
+	text-decoration: none;
+}
+
+.importante {
+	font-weight: bold; font-size: 1.3em;
+}	
+.raro {
+	text-decoration:overline;
+}
+

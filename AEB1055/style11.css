@@ -1,0 +1,31 @@
+.formulario  p {
+	width: 400px;
+	margin: 0;
+	padding: 8px 0;
+	padding-left: 255px; /*Distancia a la cual comienza la etiqueta*/
+	border-top: 1px solid #ddd;
+}
+ 
+.formulario   label {
+	font-weight: bold;
+	float: left;
+	text-align: right;
+	margin-left: -255px; /*Ancho de la columna*/
+	width: 240px; /*Ancho de la etiqueta. Para que se genere un margen derecho, esta medida debe ser menor que el margen izquierdo.*/
+}
+ 
+.formulario input[type="text"] { /*ancho de las cajas de texto*/
+	width: 250px;
+}
+ 
+.formulario textarea {
+	width: 250px;
+	height: 150px;
+	font: normal 14px arial, helvetica, sans-serif;
+}
+
+ 
+#botones {
+  margin-left: 255px;
+}
+

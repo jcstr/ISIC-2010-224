@@ -1,0 +1,25 @@
+ul {
+  list-style-type: circle;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
+
+ul {
+ list-style-image: url(flecha.png);
+}
+
+ol {
+ list-style-image: url(angulo.png);
+}
+
+li {
+ line-height: 1.2em;
+}
+

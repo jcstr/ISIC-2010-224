@@ -1,0 +1,105 @@
+<html>
+<head>
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" type = "text/css" href = "style7.css">
+	<link rel = "stylesheet" type = "text/css" href = "style8.css">
+	<link rel = "stylesheet" type = "text/css" href = "style9.css">
+	<link rel = "stylesheet" type = "text/css" href = "style10.css">
+	<title>Práctica 5</title>
+</head>
+<body>
+	<a href="#">Enlace con el estilo por defecto</a><br>
+	<a class="alternativo" href="#">Enlace de color rojo</a><br>
+	<a class="simple" href="#">Enlace sin subrayado</a><br>
+	<a class="importante" href="#">Enlace muy importante</a><br>
+	<a class="raro" href="#">Enlace con un estilo raro</a><br>
+	<img id="destacada" src="imagen.png" />
+
+	<ul>
+    <li>Item de lista 1</li>
+    <li>Item de lista 2
+        <ol>
+            <li>Subitem de lista A</li>
+            <li>Subitem de lista B</li>
+            <li>Subitem de lista C</li>
+        </ol>
+    </li>
+    <li>Item de lista 3</li>
+	</ul>
+
+	<table>
+<caption>Tabla de ejemplo</caption>
+  <tr>
+    <td></td>
+    <th>Columna 1</th>
+    <th>Columna 2</th>
+    <th>Columna 3</th>
+    <th>Columna 4</th>
+  </tr>
+  <tr>
+    <th>Fila 1</th>
+    <td>Celda 1,1</td>
+    <td>Celda 1,2</td>
+    <td>Celda 1,3</td>
+    <td>Celda 1,4</td>
+  </tr>
+  <tr>
+    <th>Fila 2</th>
+    <td>Celda 2,1</td>
+    <td>Celda 2,2</td>
+    <td>Celda 2,3</td>
+    <td>Celda 2,4</td>
+  </tr>
+  <tr>
+    <th>Fila 3</th>
+    <td>Celda 3,1</td>
+    <td>Celda 3,2</td>
+    <td>Celda 3,3</td>
+    <td>Celda 3,4</td>
+	</tr>
+  <tr>
+    <th>Fila 4</th>
+    <td>Celda 4,1</td>
+    <td>Celda 4,2</td>
+    <td>Celda 4,3</td>
+    <td>Celda 4,4</td>
+  </tr>
+</table>
+
+<h2>Formulario</h2>
+        <form id="miformulario" class="formulario" action="">
+          <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="user" value="" />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="text" id="emailaddress" value="" />
+          </p>
+          <p>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje"></textarea>
+          </p>
+          <p>
+            <label for="comentarios">Sexo:</label>
+            Masculino: <input type="radio" name="sex" /> 
+            Femenino: <input type="radio" name="sex" /><br />
+          </p>
+          <p>
+            <label for="comentarios">Color preferido:</label>
+            <input type="checkbox" name="color" /> Rojo<br />
+            <input type="checkbox" name="color" class="threepxfix" /> Verde <br />
+            <input type="checkbox" name="color" class="threepxfix" /> Azul <br />
+          </p>
+          <p>
+            <label for="terms">Acepto los términos</label>
+            <input type="checkbox" id="terms" class="boxes" />
+          </p>
+        <div id="botones">
+          <input type="submit" value="Submit" /> 
+          <input type="reset" value="reset" />
+        </div>
+</form>
+
+</body>
+</html>
