@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Alternar entre formatos de lista de HTWL5</title>
+		<script>
+
+			var seleccion; // la seleccion del usuario
+			var etiquetaInicial; // etiqueta de elemento de lista inicial
+			var etiquetaFinal; // etiqueta de elemento de lista final
+			var entradaValida = true; // true si la entrada es valida false si no
+			var tipoLista; // tipo de lista como cadena
+
+			seleccion = window.prompt("Seleccione un estilo de lista:\n" +
+				"1 (numerada), 2 (con letras), 3(numeros romanos)", "1");
+
+			switch (seleccion)
+			{
+				case "1":
+					etiquetaInicial = "<ol>";
+					etiquetaFinal = "</ol>";
+					tipoLista = "<hl>Lista numerada</hl>";
+					break;
+				case "2":
+					etiquetaInicial = "<ol style = 'list-style-type: upper-alpha'>";
+					etiquetaFinal = "</ol>";
+					tipoLista = "<hl>Lista con letras</hl>";
+					break;
+				case "3":
+					etiquetaInicial = "<ol style = 'list-style-type: upper-roman'>";
+					etiquetaFinal = "</ol>";
+					tipoLista = "<hl>Lista con numeros romanos</hl>";
+					break;
+				default:
+				entradaValida = false;
+				break;
+			} // fin de switch
+
+			if (entradaValida === true)
+			{
+				document.writeln(tipoLista + etiquetaInicial);
+
+				for (var i = 1; i <= 3; ++i)
+					document.writeln("<li>Elemento de lista " + i + "</li>" );
+
+				document.writeln(etiquetaFinal);
+			} // fin de if
+			else
+				document.writeln("Seleccion invalida: " + seleccion);
+
+		</script>
+	</head><body></body>
+</html>

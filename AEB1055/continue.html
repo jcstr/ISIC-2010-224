@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>
+			Uso de la instruccion continue en una instruccion for
+		</title>
+
+		<script>
+
+			for (var cuenta = 1; cuenta <= 10; ++cuenta)
+			{
+				if (cuenta == 5)
+					continue; // omite el resto del código del ciclo sólo si cuenta == 5
+
+				document.writeln(cuenta + " ");
+			} //fin de for
+
+			document.writeln ("<p>Se uso continue para no imprimir el 5</p>");
+
+		</script>
+
+	</head><body></body>
+</html>
