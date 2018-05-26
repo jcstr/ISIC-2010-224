@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Un programa de suma</title>
+		<script>
+			var primerNumero; // primera cadena introducida por el usuario
+			var segundoNumero; // segunda cadena introducida por el usuario
+			var numerol; // primer numero a sumar
+			var numero2; // segundo numero a sumar
+			var suma; // suma de numerol y numero2
+
+			// lee el primer numero del usuario como una cadena
+			primerNumero = window.prompt("Escriba el primer entero");
+
+			// lee el segundo numero del usuario como una cadena
+			segundoNumero = window.prompt("Escriba el segundo entero");
+
+			// convierte los numeros de cadenas a enteros
+			numero1 = parseInt(primerNumero);
+			numero2 = parseInt(segundoNumero);
+			suma = numero1 + numero2; // suma los numeros
+			
+			// muestra los resultados
+			document.writeln("<hl>La suma es " + suma + "</hl>");
+		</script>
+	</head> <body></body>
+</html>

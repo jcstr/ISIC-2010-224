@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Uso de operadores relacionales</title>
+		<script>
+
+		var nombre; // cadena introducida por el usuario
+		var ahora = new Date(); // fecha y hora actuales
+		var hora = ahora.getHours(); // hora actual (0-23)
+
+		// lee el nombre del cuadro indicador como una cadena
+		nombre = window.prompt("Escriba su nombre");
+		
+		// determina si es de mañana
+		if (hora < 12)
+			document.write("<hl>Buenos dias, ");
+
+		// determina si la hora es PM
+		if (hora >= 12)
+		{
+			// convierte a reloj de 12 horas
+			hora = hora - 12;
+
+			// determina si es antes de las 6 PM
+			if (hora < 6)
+				document.write ("<hl>Buenas tardes, " );
+
+			// determina si es despues de las 6 PM
+			if (hora >= 6)
+				document.write ("<hl>Buenas noches, " );
+		} // end if
+
+		document.writeln (nombre +
+			", bienvenido a la programacion en JavaScript</hl>");
+
+		</script>
+	</head><body></body>
+</html>
