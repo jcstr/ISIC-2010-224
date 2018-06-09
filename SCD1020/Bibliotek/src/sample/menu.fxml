@@ -1,0 +1,97 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?> 
+<?import fxmltableview.*?> 
+
+<GridPane fx:controller="sample.MenuController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+    <TableView fx:id="tabla_prestamos" editable="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <columns>
+            <!-- Clase Libro -->
+            <TableColumn text="Id" fx:id="id" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="ISBN" fx:id="isbn" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="isbn"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Titulo" fx:id="titulo" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="titulo"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Autor" fx:id="autor" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="autor"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Editorial" fx:id="editorial" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="editorial"/>
+                </cellValueFactory>
+            </TableColumn>
+            
+            <TableColumn text="Edicion" fx:id="edicion" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="edicion"/>
+                </cellValueFactory>
+            </TableColumn>
+            <!-- fin -->
+
+            <!-- clase Prestamo -->
+            <TableColumn text="Nombre" fx:id="nombre" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nombre"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Direccion" fx:id="direccion" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="direccion"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Telefono" fx:id="telefono" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="telefono"/>
+                </cellValueFactory>
+            </TableColumn>
+            
+            <TableColumn text="Fecha Inicial" fx:id="fecha_inicial" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="fecha_inicial"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Fecha Final" fx:id="fecha_final" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="fecha_final"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Fecha Entrega" fx:id="fecha_entrega" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="fecha_entrega"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+        <!-- fin -->
+
+        <sortOrder>
+            <fx:reference source="id"/>
+        </sortOrder> 
+    </TableView>         
+    
+    <Button text="Crear" fx:id="_crear" GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#crear"/>
+    <Button text="Editar" fx:id="_editar" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#editar"/>
+    <Button text="Eliminar" fx:id="_eliminar" GridPane.columnIndex="2" GridPane.rowIndex="3" onAction="#eliminar"/>
+</GridPane>
