@@ -2,3 +2,8 @@
 
 
 ![syllabus](https://i.imgur.com/ShxsgTa.png)
+
+## Expectativa
+
+![expectativa](https://i.imgur.com/uorrzt4.png)
+
