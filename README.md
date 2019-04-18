@@ -2,8 +2,6 @@
 
 <p align="center">
   <img src="https://i.imgur.com/aA3kcoR.png">
-  <br><br>
-  <img src="https://i.imgur.com/ShxsgTa.png">
 </p>
 
 ---
@@ -27,6 +25,10 @@
 - [ ] Residencia profesional.
 - [ ] Titulación.
 
+---
+## Side-projects
+- [Former Linux Install Fest](https://i.imgur.com/BuAJqxo.jpg)
+- Comunidad FOSS - [Grupo de chat en Telegram](https://t.me/LinuxTecZapopan)
 
 ---
 MIT - © 2016 Jesús Castro
