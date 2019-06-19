@@ -7,12 +7,12 @@
 ---
 ## Expectativa
 
-![expectativa](https://i.imgur.com/QZU5SOI.png)
+![expectativa](https://i.imgur.com/aElYU40.png)
 
 
 ## Especialidad
-- [ ] Desarrollo Web (Java)
-- [ ] C#
+- [x] ~~Desarrollo Web (Java)~~
+- [x] ~~C#~~
 - [ ] Tópicos de seguridad en la Web.
 - [ ] Desarrollo de aplicaciones móviles.
 - [ ] Tópicos selectos de bases de datos.
@@ -21,7 +21,7 @@
 - [x] ~~Actividades complementarias.~~
 - [ ] TOEFL.
 - [ ] Especialidad.
-- [ ] Servicio Social.
+- [x] ~~Servicio Social.~~
 - [ ] Residencia profesional.
 - [ ] Titulación.
 
@@ -29,6 +29,7 @@
 ## Side-projects
 - [Former Linux Install Fest](https://i.imgur.com/BuAJqxo.jpg)
 - Comunidad FOSS - [Grupo de chat en Telegram](https://t.me/LinuxTecZapopan)
+- [Open Source Tec MM Zapopan](https://t.me/s/OSTecMMZapopan)
 
 ---
 MIT - © 2016 Jesús Castro
