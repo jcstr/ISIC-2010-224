@@ -9,6 +9,7 @@
 
 ![expectativa](https://i.imgur.com/aElYU40.png)
 
+---
 
 ## Especialidad
 - [x] ~~Desarrollo Web (Java)~~
@@ -25,7 +26,6 @@
 - [ ] Residencia profesional.
 - [ ] Titulación.
 
----
 ## Side-projects
 - [Former Linux Install Fest](https://i.imgur.com/BuAJqxo.jpg)
 - Comunidad FOSS - [Grupo de chat en Telegram](https://t.me/LinuxTecZapopan)
