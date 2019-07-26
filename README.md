@@ -29,7 +29,7 @@
 ## Side-projects
 - [Former Linux Install Fest](https://i.imgur.com/BuAJqxo.jpg)
 - Comunidad FOSS - [Grupo de chat en Telegram](https://t.me/LinuxTecZapopan)
-- [Open Source Tec MM Zapopan](https://t.me/s/OSTecMMZapopan)
+- [Open Source Tec MM](https://github.com/osstecmm)
 
 ---
 MIT - © 2016 Jesús Castro
