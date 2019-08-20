@@ -28,7 +28,7 @@
 
 ## Side-projects
 - [Former Linux Install Fest](https://i.imgur.com/BuAJqxo.jpg)
-- Comunidad FOSS - [Grupo de chat en Telegram](https://t.me/LinuxTecZapopan)
+- Comunidad FOSS - [Grupo de chat en Telegram](https://t.me/LinuxerosTecMM)
 - [Open Source Tec MM](https://github.com/osstecmm)
 
 ---
