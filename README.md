@@ -7,7 +7,7 @@
 ---
 ## Expectativa
 
-![expectativa](https://i.imgur.com/aElYU40.png)
+![expectativa](https://i.imgur.com/XRikNrt.png)
 
 ---
 
