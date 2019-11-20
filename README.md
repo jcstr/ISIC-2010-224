@@ -1,7 +1,7 @@
 # ISIC-2010-224
 
 <p align="center">
-  <img src="https://i.imgur.com/aA3kcoR.png">
+  <img src="https://i.imgur.com/aA3kcoR.png" width="65%" height="65%">
 </p>
 
 ---
