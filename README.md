@@ -1,13 +1,13 @@
 # ISIC-2010-224
 
 <p align="center">
-  <img src="https://i.imgur.com/aA3kcoR.png" width="65%" height="65%">
+  <img src="https://i.imgur.com/g0ro1Sl.png" width="65%" height="65%">
 </p>
 
 ---
 ## Expectativa
 
-![expectativa](https://i.imgur.com/XRikNrt.png)
+![expectativa](https://i.imgur.com/LMTIN5y.png)
 
 ---
 
@@ -15,22 +15,35 @@
 - [x] ~~Desarrollo Web (Java)~~
 - [x] ~~C#~~
 - [ ] Tópicos de seguridad en la Web.
-- [ ] Desarrollo de aplicaciones móviles.
-- [ ] Tópicos selectos de bases de datos.
+- [x] ~~Desarrollo de aplicaciones móviles.~~
+- [x] ~~Tópicos selectos de bases de datos.~~
 
 ## Roadmap
 - [x] ~~Actividades complementarias.~~
 - [ ] TOEFL.
-- [ ] Especialidad.
+- [x] ~~Especialidad.~~
 - [x] ~~Servicio Social.~~
 - [ ] Residencia profesional.
 - [ ] Titulación.
 
 ## Side-projects
-- [Former Linux Install Fest](https://i.imgur.com/BuAJqxo.jpg)
-- Comunidad FOSS - [Grupo de chat en Telegram](https://t.me/LinuxerosTecMM)
-- [Open Source Tec MM](https://github.com/osstecmm)
+- Primer Festival de instalación de Software Libre y de código abierto.
 
+<p align="center">
+  <img src="https://i.imgur.com/BuAJqxo.jpg" width="50%" height="50%">
+</p>
+
+- [Linuxeros Zapopan](https://talent-network.org/comunidades/linuxeros-zapopan/)
+  - Comunidad FOSS
+  - [Grupo de chat en Telegram](https://t.me/LinuxerosZapopan)
+  
+<p align="center">
+  <img src="https://i.imgur.com/dNdSM4M.jpg" width="35%" height="35%">
+</p>
+
+- [Tecnológico Mario Molina Open Source](https://github.com/osstecmm)
+  - Organización Open Source, hacemos proyectos que resuelvan un problema por iniciativa propia o simplemente por diversión.
+ 
 ---
 MIT - © 2016 Jesús Castro
 
