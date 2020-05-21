@@ -12,11 +12,14 @@ If you want to set up another server software here's the respective guides:
 ---
 
 ### Steps to reproduce
- Once you have `mkcert` installed generate the local CA:
-	- `mkcert -install`
+Once you have `mkcert` installed generate the local CA:
 
- Generate Local SSL Certificates:
- `mkcert example.com '*.example.com' localhost 127.0.0.1 ::1`
+- `mkcert -install`
+
+Generate Local SSL Certificates:
+
+`mkcert example.com '*.example.com' localhost 127.0.0.1 ::1`
+
 
 You can work with the server you want, in this example we're using a tiny server written in go:
 ```
@@ -33,7 +36,6 @@ func main() {
 }
 
 func HelloServer(w http.ResponseWriter, r *http.Request) {
-    //fmt.Fprintf(w, "Hello Secure Server!", r.URL.Path[1:])
 	fmt.Fprintf(w, "\nHola TecMM! 🔐")
 }
 ```
