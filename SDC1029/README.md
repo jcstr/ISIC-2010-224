@@ -14,7 +14,7 @@ If you want to set up another server software here's the respective guides:
 ### Steps to reproduce
 Once you have `mkcert` installed generate the local CA:
 
-- `mkcert -install`
+`mkcert -install`
 
 Generate Local SSL Certificates:
 
@@ -22,7 +22,7 @@ Generate Local SSL Certificates:
 
 
 You can work with the server you want, in this example we're using a tiny server written in go:
-```
+```go
 package main
 
 import (
@@ -36,11 +36,13 @@ func main() {
 }
 
 func HelloServer(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "\nHola TecMM! 🔐")
+	fmt.Fprintf(w, "Hola TecMM! 🔐")
 }
 ```
 
 - Run `go run index.go`
-- Go to `https://localhost:8080`
+- Go to `https://localhost:8080` (make sure to use https instead of http)
 - Enjoy!
+
+![example](https://imgur.com/Jw0ZHpg.png)
 
