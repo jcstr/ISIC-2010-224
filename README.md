@@ -42,8 +42,14 @@
 </p>
 
 - [Tecnológico Mario Molina Open Source](https://github.com/osstecmm)
-  - Organización Open Source, hacemos proyectos que resuelvan un problema por iniciativa propia o simplemente por diversión.
+  - Organización de Código Abierto, hacemos proyectos que resuelven una problemática relacionada a la comunidad del Tecnológico por iniciativa propia o simplemente por el gusto de aprender.
  
+ 
+ 
+<p align="center"> 
+ <img src="https://i.imgur.com/5cJ7Q63.png">
+</p>
+
 ---
 MIT - © 2016 Jesús Castro
 
