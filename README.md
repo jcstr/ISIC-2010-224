@@ -7,14 +7,14 @@
 ---
 ## Expectativa
 
-![expectativa](https://i.imgur.com/LMTIN5y.png)
+![expectativa](https://i.imgur.com/lcgZFyh.png)
 
 ---
 
 ## Especialidad
 - [x] ~~Desarrollo Web (Java)~~
 - [x] ~~C#~~
-- [ ] Tópicos de seguridad en la Web.
+- [x] ~~Tópicos de seguridad en la Web.~~
 - [x] ~~Desarrollo de aplicaciones móviles.~~
 - [x] ~~Tópicos selectos de bases de datos.~~
 
@@ -23,7 +23,7 @@
 - [ ] TOEFL.
 - [x] ~~Especialidad.~~
 - [x] ~~Servicio Social.~~
-- [ ] Residencia profesional.
+- [x] ~~Residencia profesional.~~
 - [ ] Titulación.
 
 ## Side-projects
@@ -47,7 +47,7 @@
  
  
 <p align="center"> 
- <img src="https://i.imgur.com/5cJ7Q63.png">
+ <img src="https://i.imgur.com/hDUpdqn.jpg">
 </p>
 
 ---
