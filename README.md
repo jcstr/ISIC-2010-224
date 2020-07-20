@@ -1,11 +1,11 @@
 # ISIC-2010-224
 
 <p align="center">
-  <img src="https://i.imgur.com/g0ro1Sl.png" width="65%" height="65%">
+  <img src="https://i.imgur.com/g0ro1Sl.png" width="50%" height="50%">
 </p>
 
 ---
-## Expectativa
+## Plan de estudios
 
 ![expectativa](https://i.imgur.com/lcgZFyh.png)
 
@@ -18,6 +18,10 @@
 - [x] ~~Desarrollo de aplicaciones móviles.~~
 - [x] ~~Tópicos selectos de bases de datos.~~
 
+## Residencia Profesional
+- [MateFacil](https://github.com/osstecmm/matefacil-demo)
+- [Tecnologico Mario Molina Open Source](https://github.com/osstecmm)
+
 ## Roadmap
 - [x] ~~Actividades complementarias.~~
 - [ ] TOEFL.
@@ -27,7 +31,7 @@
 - [ ] Titulación.
 
 ## Side-projects
-- Primer Festival de instalación de Software Libre y de código abierto.
+- Primer Festival de instalación de Software Libre y de Código Abierto.
 
 <p align="center">
   <img src="https://i.imgur.com/BuAJqxo.jpg" width="50%" height="50%">
@@ -43,9 +47,12 @@
 
 - [Tecnológico Mario Molina Open Source](https://github.com/osstecmm)
   - Organización de Código Abierto, hacemos proyectos que resuelven una problemática relacionada a la comunidad del Tecnológico por iniciativa propia o simplemente por el gusto de aprender.
- 
- 
- 
+
+<p align="center">
+  <img src="https://i.imgur.com/55sp5ih.png" width="35%" height="35%">
+</p>
+
+
 <p align="center"> 
  <img src="https://i.imgur.com/hDUpdqn.jpg">
 </p>
