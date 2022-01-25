@@ -24,7 +24,7 @@
 
 ## Roadmap
 - [x] ~~Actividades complementarias.~~
-- [ ] TOEFL.
+- [x] ~~TOEFL.~~
 - [x] ~~Especialidad.~~
 - [x] ~~Servicio Social.~~
 - [x] ~~Residencia profesional.~~
