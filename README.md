@@ -28,7 +28,7 @@
 - [x] ~~Especialidad.~~
 - [x] ~~Servicio Social.~~
 - [x] ~~Residencia profesional.~~
-- [ ] Titulación.
+- [x] ~~Titulación~~
 
 ## Side-projects
 - Primer Festival de instalación de Software Libre y de Código Abierto.
@@ -37,7 +37,7 @@
   <img src="https://i.imgur.com/BuAJqxo.jpg" width="50%" height="50%">
 </p>
 
-- [Linuxeros Zapopan](https://talent-network.org/comunidades/linuxeros-zapopan/)
+- [Linuxeros Zapopan](https://twitter.com/lnxzpn)
   - Comunidad FOSS
   - [Grupo de chat en Telegram](https://t.me/LinuxerosZapopan)
   
